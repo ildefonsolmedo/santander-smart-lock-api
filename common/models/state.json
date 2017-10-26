@@ -1,0 +1,68 @@
+{
+	"name": "State",
+	"base": "Model",
+	"properties": {},
+	"methods": {
+		"current": {
+			"isStatic": true,
+			"accepts": [],
+			"returns": {
+				"arg": "state",
+				"type": "Object"
+			},
+			"http": {
+				"verb": "get"
+			}
+		},
+		"boxUser0Triggered": {
+			"isStatic": true,
+			"accepts": [],
+			"returns": [{
+				"arg": "res",
+				"type": "null"
+			}],
+			"http": {
+				"verb": "post"
+			}
+		},
+		"boxUser1Triggered": {
+			"isStatic": true,
+			"accepts": [],
+			"returns": [{
+				"arg": "res",
+				"type": "null"
+			}],
+			"http": {
+				"verb": "post"
+			}
+		},
+		"lockEnergised": {
+			"isStatic": true,
+			"accepts": [],
+			"returns": [{
+				"arg": "res",
+				"type": "null"
+			}],
+			"http": {
+				"verb": "post"
+			}
+		},
+		"unlockingTransaction": {
+			"isStatic": true,
+			"accepts": [{
+				"arg": "transactionObject",
+				"type": "Object",
+				"http": {
+					"source": "body"
+				}
+			}],
+			"returns": [{
+				"arg": "res",
+				"type": "null"
+			}],
+			"http": {
+				"verb": "post"
+			}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+product: '1.0.0'
+
+info:
+  name: santander-smart-lock-api
+  title: santander-smart-lock-api
+  version: '1.0.0'
+
+apis:
+  'santander-smart-lock-api':
+    $ref: santander-smart-lock-api.yaml
+
+visibility:
+  view:
+    type: public
+  subscribe:
+    type: authenticated
+
+plans:
+  default:
+    title: Default Plan
+    description: Default Plan
+    approval: false
+    rate-limit:
+      value: 100/hour
+      hard-limit: false
